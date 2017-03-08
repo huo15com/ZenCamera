@@ -1,0 +1,246 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Demo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Demo.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Demo"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Zen 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2017 火一五信息科技",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DEMO_DIALOG DIALOGEX 0, 0, 719, 464
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Demo"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_IMAGE,"Static",SS_BLACKFRAME,7,7,538,428
+    PUSHBUTTON      "Play",IDC_PLAY,567,33,62,14
+    COMBOBOX        IDC_MULTICAM,568,14,61,75,CBS_DROPDOWN | CBS_SORT | WS_TABSTOP
+    COMBOBOX        IDC_RESOLUTION,640,15,62,67,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Stop",IDC_STOP,567,49,62,14
+    GROUPBOX        "ROI",IDC_STATIC,553,69,159,116
+    LTEXT           "Row Start",IDC_STATIC,569,91,37,8
+    LTEXT           "Column Start",IDC_STATIC,569,111,49,8
+    LTEXT           "Width",IDC_STATIC,569,129,21,8
+    LTEXT           "Height",IDC_STATIC,569,149,25,8
+    EDITTEXT        IDC_ROIOFFSETX,640,87,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROIOFFSETY,640,109,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROIWIDTH,640,129,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROIHEIGHT,639,149,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Apply",IDC_ROIAPPLY,603,167,50,14
+    GROUPBOX        "Other",IDC_STATIC,550,189,162,29
+    CONTROL         "H Flip",IDC_FLIPX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,567,203,40,10
+    CONTROL         "V Flip",IDC_FLIPY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,647,203,40,10
+    GROUPBOX        "Parameter",IDC_STATIC,551,224,161,34
+    CONTROL         "Group 0",IDC_GROUP0,"Button",BS_AUTORADIOBUTTON | WS_GROUP,569,240,44,10
+    CONTROL         "Group 1",IDC_GROUP1,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,625,242,44,10
+    PUSHBUTTON      "One Push WB",IDC_ONEPUSHWB,643,32,50,14
+    PUSHBUTTON      "Save BMP",IDC_SAVEBMP,575,273,50,14
+    PUSHBUTTON      "Save JPG",IDC_SAVEJPG,645,273,50,14
+    GROUPBOX        "Save File",IDC_STATIC,553,261,159,38
+    GROUPBOX        "IO",IDC_STATIC,557,315,155,40
+    GROUPBOX        "Strobe",IDC_STATIC,557,360,155,40
+    GROUPBOX        "Trigger",IDC_STATIC,557,401,155,51
+    CONTROL         "Enable Strobe",IDC_STROBE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,574,369,138,10
+    CONTROL         "Invert Strobe Polarity",IDC_STROBEPOLARITY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,575,385,137,10
+    CONTROL         "IN",IDC_IN,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,573,325,42,10
+    CONTROL         "OUT",IDC_OUT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,573,339,41,10
+    PUSHBUTTON      "Refresh Input",IDC_REFRESH,646,331,66,14
+    CONTROL         "Trigger Mode",IDC_SETTRIGGERMODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,573,419,98,10
+    PUSHBUTTON      "Software trigger",IDC_TRIGGER,574,431,96,14
+    LTEXT           "Fps",IDC_STATIC,21,448,13,8
+    LTEXT           "0",IDC_Fps,42,448,22,8
+    PUSHBUTTON      "ShowImage",IDC_SHOW,641,49,62,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "Demo Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Demo"
+            VALUE "LegalCopyright", "版权所有 (C) 2013"
+            VALUE "OriginalFilename", "Demo.EXE"
+            VALUE "ProductName", "Demo 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 712
+        VERTGUIDE, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 456
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 Demo(&A)..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Demo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
